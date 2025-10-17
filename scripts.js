@@ -2,10 +2,10 @@ let nextPlayer = 'X'; // takes a value of either 'X' or 'O' according to the gam
 
 //initalize the game by setting the value inside next-lbl to nextPlayer
 //hint: you could use innerText for this 
-document.getElementById('next-lbl').innerText = nextPlayer
+document.getElementById('next-lbl').innerText = nextPlayer;
 
 //This call will create the buttons needed for the gameboard.
-createGameBoard()
+createGameBoard();
 
 function createGameBoard()
 {
@@ -47,7 +47,7 @@ function takeCell(event)
     btn.disabled = true;
 
     //switch to the other player
-    nextPlayer = (nextPlayer === 'x') ? 'O' : 'x';
+    nextPlayer = (nextPlayer === 'X') ? 'O' : 'X';
 
     // update the value shown in next-lbl
     document.getElementById('next-lbl').innerText = nextPlayer;
@@ -70,6 +70,6 @@ function isGameOver()
         if (!btns[i].disabled) { 
             return false;
        }
-  }
+     }
   return true;
   }
