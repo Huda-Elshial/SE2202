@@ -14,6 +14,8 @@ function createPoint(x, y) {
 
     point.x = x;
     point.y = y;
+
+    return point;
 }
 
 // test the prototype-based objects
