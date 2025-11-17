@@ -1,6 +1,6 @@
 /**
  * Mini Project 1
- * Constructor Functions Version
+ * Constructor Functions 
  * This file recreates the plainObjects.js functionality using
  * constructor functions as required by the UML diagram.
  */
