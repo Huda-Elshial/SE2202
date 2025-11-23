@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Course Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Course Explorer</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <div class="file-load">
+        <label for="fileInput">Load courses JSON:</label>
+        <input id="fileInput" type="file" accept="application/json">
+        <button id="loadSample">Load Sample Data</button>
+      </div>
+
+      <div class="filters">
+        <label>Department: <select id="filter-department"><option value="">All</option></select></label>
+        <label>Level: <select id="filter-level"><option value="">All</option></select></label>
+        <label>Credits: <select id="filter-credits"><option value="">All</option></select></label>
+        <label>Instructor: <select id="filter-instructor"><option value="">All</option></select></label>
+        <label>Semester: <select id="filter-semester"><option value="">All</option></select></label>
+      </div>
+
+      <div class="sorting">
+        <label>Sort by: <select id="sort-select">
+          <option value="title-asc">Title (A → Z)</option>
+          <option value="title-desc">Title (Z → A)</option>
+          <option value="id-asc">ID (A → Z)</option>
+          <option value="id-desc">ID (Z → A)</option>
+          <option value="semester-asc">Semester (old → new)</option>
+          <option value="semester-desc">Semester (new → old)</option>
+        </select></label>
+      </div>
+
+      <div id="error" class="error" aria-live="polite"></div>
+    </section>
+
+    <section class="content">
+      <div id="course-list" class="course-list"></div>
+      <aside id="course-detail" class="course-detail">
+        <h2>Course Details</h2>
+        <div id="detail-content">Select a course to see details.</div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <small>Prepared for Mini Project 2 — dynamic filtering & sorting example</small>
+  </footer>
+</body>
+</html>

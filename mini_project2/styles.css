@@ -1,0 +1,20 @@
+:root{
+  --gap:12px;
+  --accent:#1967d2;
+  --muted:#666;
+}
+*{box-sizing:border-box;font-family:Segoe UI,Arial,Helvetica,sans-serif}
+body{margin:0;padding:16px;background:#fafafa;color:#111}
+header{margin-bottom:12px}
+.controls{display:flex;flex-direction:column;gap:var(--gap);margin-bottom:12px}
+.file-load{display:flex;align-items:center;gap:8px}
+.filters,label,.sorting{display:flex;gap:8px;flex-wrap:wrap}
+select{padding:6px;border:1px solid #ccc;border-radius:4px}
+.content{display:flex;gap:16px}
+.course-list{flex:1;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.card{background:#fff;border:1px solid #ddd;padding:10px;border-radius:6px;cursor:pointer}
+.card h3{margin:0 0 6px 0;font-size:16px}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.course-detail{width:320px;background:#fff;border:1px solid #ddd;padding:12px;border-radius:6px}
+.error{color:#8b0000}
+footer{margin-top:16px;color:var(--muted)}
